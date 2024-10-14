@@ -1,0 +1,8 @@
+# Ignore unnecessary files
+.Rhistory
+.RData
+.Rproj.user
+logs/*
+data/raw/*
+data/processed/*
+docs/_site/*

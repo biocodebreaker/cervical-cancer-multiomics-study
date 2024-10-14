@@ -1,0 +1,26 @@
+---
+title: 'Cervical Cancer Multi-Omics Study'
+format: html
+---
+
+# Published Studies on Cervical Cancer
+
+Below is a collection of published studies related to cervical cancer multi-omics data:
+
+```{r}
+# Load necessary libraries
+library(yaml)
+
+# Load the YAML file
+studies <- yaml::read_yaml('../data/pubmed_metadata.yaml')
+
+# Render the studies
+for (study in studies) {
+  cat('##', study$articletitle, '\n')
+  cat('- **Authors**:', study$authors, '\n')
+  cat('- **Journal**:', study$journal, ',', study$year, '\n')
+  cat('- **DOI**: [', study$doi, '](https://doi.org/', study$doi, ')\n')
+  cat('- **PMID**:', study$pmid, '\n')
+  cat('- **Abstract**:', study$abstract, '\n\n')
+}
+```

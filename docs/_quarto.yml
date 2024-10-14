@@ -1,0 +1,5 @@
+project:
+  type: website
+  output-dir: ../output
+title: 'Cervical Cancer Multi-Omics Study'
+description: 'A collection of published multi-omics studies related to cervical cancer.'
